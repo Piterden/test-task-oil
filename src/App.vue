@@ -1,5 +1,7 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
+  <div class="logo">
+    <img alt="Vue logo" src="./assets/logo.png" />
+  </div>
   <div id="nav">
     <router-link :to="{ name: 'home' }">Home</router-link>
     |
@@ -50,5 +52,9 @@ export default class Home extends Vue {
 
 pre {
   white-space: break-spaces;
+}
+
+.logo {
+  text-align: center;
 }
 </style>
